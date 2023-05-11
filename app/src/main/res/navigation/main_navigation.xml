@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemBook">
+
+    <fragment
+        android:id="@+id/itemBook"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.BookListFragment"
+        android:label="fragment_book_list"
+        tools:layout="@layout/fragment_book_list" >
+        <action
+            android:id="@+id/actionBookDetail"
+            app:destination="@id/bookDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.BookDetailFragment"
+        android:label="fragment_book_detail"
+        tools:layout="@layout/fragment_book_detail" >
+        <argument
+            android:name="bookID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemArticle"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.ArticleListFragment"
+        android:label="fragment_article_list"
+        tools:layout="@layout/fragment_article_list" >
+        <action
+            android:id="@+id/actionArticleDetail"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.ArticleDetailFragment"
+        android:label="fragment_article_detail"
+        tools:layout="@layout/fragment_article_detail" >
+        <argument
+            android:name="articleID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemCategory"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.CategoryListFragment"
+        android:label="fragment_category_list"
+        tools:layout="@layout/fragment_category_list" >
+        <action
+            android:id="@+id/actionCategoryDetail"
+            app:destination="@id/categoryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryDetailFragment"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.CategoryDetailFragment"
+        android:label="fragment_category_detail"
+        tools:layout="@layout/fragment_category_detail" >
+        <argument
+            android:name="categoryID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFacility"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.FacilityListFragment"
+        android:label="fragment_facility_list"
+        tools:layout="@layout/fragment_facility_list" >
+        <action
+            android:id="@+id/actionFacilityDetail"
+            app:destination="@id/facilityDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/facilityDetailFragment"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.FacilityDetailFragment"
+        android:label="fragment_facility_detail"
+        tools:layout="@layout/fragment_facility_detail" >
+        <argument
+            android:name="facilityID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemMyFavorite"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.MyFavoriteListFragment"
+        android:label="fragment_my_favorite_list"
+        tools:layout="@layout/fragment_my_favorite_list" >
+        <action
+            android:id="@+id/actionMyFavoriteDetail"
+            app:destination="@id/myFavoriteDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myFavoriteDetailFragment"
+        android:name="com.example.a160420099_zakiydhiyaulhaq_projectuts.view.MyFavoriteDetailFragment"
+        android:label="fragment_my_favorite_detail"
+        tools:layout="@layout/fragment_my_favorite_detail" >
+        <argument
+            android:name="myfavoriteID"
+            app:argType="string" />
+    </fragment>
+</navigation>

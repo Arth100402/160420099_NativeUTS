@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BookDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewDetBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btnBorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="borrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLanguageBookDetail" />
+
+        <TextView
+            android:id="@+id/textJudulBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Judul Buku"
+            app:layout_constraintStart_toEndOf="@+id/imageViewDetBook"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDetBook" />
+
+        <TextView
+            android:id="@+id/textPenulisBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Penulis"
+            app:layout_constraintStart_toStartOf="@+id/textJudulBookDetail"
+            app:layout_constraintTop_toBottomOf="@+id/textJudulBookDetail" />
+
+        <TextView
+            android:id="@+id/textPublisherBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Publisher"
+            app:layout_constraintStart_toStartOf="@+id/textPenulisBookDetail"
+            app:layout_constraintTop_toBottomOf="@+id/textPenulisBookDetail" />
+
+        <TextView
+            android:id="@+id/textDescBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Description"
+            app:layout_constraintStart_toStartOf="@+id/imageViewDetBook"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDetBook" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Category :"
+            app:layout_constraintStart_toStartOf="@+id/textDescBookDetail"
+            app:layout_constraintTop_toBottomOf="@+id/textDescBookDetail" />
+
+        <TextView
+            android:id="@+id/textCategoryBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:text="Category"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Book No :"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textNoBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="214123"
+            app:layout_constraintStart_toStartOf="@+id/textCategoryBookDetail"
+            app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Pages :"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textPagesDetailBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="341"
+            app:layout_constraintStart_toStartOf="@+id/textNoBookDetail"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Language :"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textLanguageBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Language"
+            app:layout_constraintStart_toStartOf="@+id/textPagesDetailBook"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/progressBarBookDet"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewDetBook"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewDetBook"
+            app:layout_constraintStart_toStartOf="@+id/imageViewDetBook"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDetBook" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
